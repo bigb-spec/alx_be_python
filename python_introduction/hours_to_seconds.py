@@ -1,6 +1,7 @@
 hours = 2
-seconds_in_1_hour = 60 * 60
+minutes_in_an_hour = 60
+seconds_in_a_minute = 60
+seconds_in_an_hour = minutes_in_an_hour * seconds_in_a_minute
+seconds_in_2_hours = seconds_in_an_hour * 2
 
-seconds = 3600 * 2
-
-print("2 hour(s) is " ,seconds, 'seconds.')
+print("2 hour(s) is", seconds_in_2_hours, 'seconds.')
