@@ -1,6 +1,6 @@
 hours = 2
-seconds = 3600
+seconds_in_1_hour = 60 * 60
 
-seconds = hours * seconds
+seconds = seconds_in_1_hour * 2
 
 print("2 hour(s) is " ,seconds, 'seconds.')
