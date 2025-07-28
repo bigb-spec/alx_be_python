@@ -19,8 +19,8 @@ def calculate_future_date():
     
         future_date = datetime.now() + timedelta(days=number_of_days)
     
-        formatted_future = future_date.strftime("%Y-%M-%D")
-        print("future Date after", number_of_days, "days:", formatted_future)
+        formatted_future = future_date.strftime("%Y-%M-%D %H:%M:%S")
+        print("Future Date after", number_of_days, "days:", formatted_future)
 
 if __name__ == "__main__":
     display_current_datetime()
