@@ -6,7 +6,7 @@ class TestSimpleCalculator(unittest.TestCase):
         """Set up the SimpleCalculator instance before each test"""
         self.calc = SimpleCalculator()
         
-    def test_add(self):
+    def test_addition(self):
         """Test the addition method."""
         #Test positive numbers
         self.assertEqual(self.calc.add(2, 3), 5)
@@ -19,7 +19,7 @@ class TestSimpleCalculator(unittest.TestCase):
         #Test floating-point number
         self.assertEqual(self.calc.add(2.5, 3.5), 6.0)
         
-    def test_subtract(self):
+    def test_subtraction(self):
         """Test subrtaction method."""
         #Test positive numbers
         self.assertEqual(self.calc.subtract(5, 3), 2)
@@ -32,7 +32,7 @@ class TestSimpleCalculator(unittest.TestCase):
         #Test floating-point number
         self.assertAlmostEqual(self.calc.subtract(5.5, 3.5), 2.0)
         
-    def test_multiply(self):
+    def test_multiplication(self):
         """Test multiplication method."""
         #Test positive numbers
         self.assertEqual(self.calc.multiply(5, 3), 15)
@@ -45,7 +45,7 @@ class TestSimpleCalculator(unittest.TestCase):
         #Test floating-point number
         self.assertAlmostEqual(self.calc.multiply(5.5, 3.5), 19.25)
         
-    def test_divide(self):
+    def test_division(self):
         """Test division method."""
         #Test positive numbers
         self.assertEqual(self.calc.divide(6, 3), 2.0)
